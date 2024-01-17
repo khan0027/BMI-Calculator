@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/dark"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="190dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/banner"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="32sp"
+            android:textStyle="bold"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark"
+        android:orientation="horizontal"
+        android:gravity="center">
+        
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border"
+            android:src="@drawable/male"
+            android:id="@+id/img_male"
+            android:layout_margin="20dp"
+
+
+            />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border"
+            android:id="@+id/img_female"
+            android:src="@drawable/female"
+            android:layout_margin="20dp"
+            />
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark"
+        android:orientation="horizontal"
+        android:layout_marginBottom="180dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:layout_marginRight="35dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:layout_marginLeft="90dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/pink"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

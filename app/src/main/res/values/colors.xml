@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#94944e</color>
+    <color name="blue">#3252ED</color>
+    <color name="pink">#FF5CCD</color>
+    <color name="dark">#29313c</color>
+    <color name="underweight">#FF5722</color>
+    <color name="normalweight">#319f4a</color>
+    <color name="overweight">#e5bb34</color>
+    <color name="obese">#9C0101</color>
+</resources>

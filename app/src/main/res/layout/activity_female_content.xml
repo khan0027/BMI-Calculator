@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark"
+    tools:context=".female_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:background="@drawable/layout_border"
+        android:padding="30dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEIGHT"
+
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1cm"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="46dp"
+            android:id="@+id/height_seek"
+            android:max="270"
+            android:min="1"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/white"
+            android:thumbTint="@color/white"
+            android:progress="1"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:background="@drawable/layout_border"
+        android:padding="30dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEIGHT"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Weight_text"
+            android:textColor="@color/white"
+            android:textSize="46sp"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/subtract"
+                android:id="@+id/sub_weight"
+                android:background="@drawable/circular_btn"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                />
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/add"
+                android:id="@+id/add_weight"
+                android:background="@drawable/circular_btn"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculate_btn"
+            android:text="Calculate BMI"
+            android:background="@drawable/circular_btn"
+            android:backgroundTint="@color/white"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="banner">BMI Calculator</string>
+    <string name="underweight">!! You are Underweight !!</string>
+    <string name="normal">!! You are Normal !!</string>
+    <string name="overweight">!! You are Overweight !!</string>
+    <string name="obesity1">!! You are in Obesity(Class 1) !!</string>
+    <string name="obesity2">!! You are in Obesity(Class 2) !!</string>
+    <string name="obesity3">!! You are in Obesity(Class 3) !!</string>
+    <string name="My_name">Md.Saqulain</string>
+    <string name="About_App"></string>
+    <string name="About_Me"></string>
+</resources>
