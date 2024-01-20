@@ -7,7 +7,21 @@
     <string name="obesity1">!! You are in Obesity(Class 1) !!</string>
     <string name="obesity2">!! You are in Obesity(Class 2) !!</string>
     <string name="obesity3">!! You are in Obesity(Class 3) !!</string>
-    <string name="My_name">Md.Saqulain</string>
-    <string name="About_App"></string>
-    <string name="About_Me"></string>
+    <string name="last">!! BMI Above 50 is Abnormal !!</string>
+    <string name="des">My Pic</string>
+    <string name="My_name">MD SAQULAIN</string>
+    <string name="About_App">This is simple app for calculating BMI(Body Mass Index)
+
+    For most people, BMI can be used to provide a good measure of obesity. But BMI fails to provide actual information on body composition like amount of muscle, bone, fat, and other tissues.
+
+In some persons BMI is a more accurate measure of body fat than others. For example, persons who are very muscular may fall into the “overweight” category when they are actually healthy and very fit. These persons with a very low body fat percentage could have the same BMI score as someone who is overweight.
+
+Similarly, an elderly and frail individual person may be in the normal weight category when they have little muscle mass and a high percentage of body fat.
+
+BMI, when used for children and adolescents who are still growing, those with large body frames or petite builds, pregnant women and highly muscled individuals thus need to be assessed and interpreted carefully.
+
+
+
+    </string>
+    <string name="About_Me">I am an engineering Student at Arka Jain University </string>
 </resources>

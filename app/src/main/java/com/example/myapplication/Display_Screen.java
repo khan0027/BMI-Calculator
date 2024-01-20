@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +19,7 @@ public class Display_Screen extends AppCompatActivity {
     ProgressBar progress_bar;
     TextView answer;
     TextView descriptive_text;
+    Button about_me;
     int counter = 0;
 
     @Override
@@ -27,18 +30,20 @@ public class Display_Screen extends AppCompatActivity {
         answer = findViewById(R.id.answer);
         descriptive_text = findViewById(R.id.descriptive_text);
         progress_bar = findViewById(R.id.progress_bar);
+        about_me = findViewById(R.id.about_me);
 
         //getting intent value
         Intent get = getIntent();
+        Intent i = new Intent(Display_Screen.this, About_Me.class);
 
         //putting intent value in integer by get extra method
         int weight_val = get.getIntExtra("weight",0);
         int height_val = get.getIntExtra("height",10000);
 
         //converting height and weight value in double because BMI can be in decimals
-        double val = Double.valueOf(weight_val);//here weight value is converted in double named as val
+        double val = (double) weight_val;//here weight value is converted in double named as val
 
-        double x = Double.valueOf(height_val);//here height value is converted in double named x
+        double x = (double) height_val;//here height value is converted in double named x
         x/=100;//here height in (cm) is converted in (m)
         double last = Math.pow(x,2.0);//here the 'last' double is made to square the height value
 
@@ -62,14 +67,19 @@ public class Display_Screen extends AppCompatActivity {
         } else if (ans > 29.9 && ans <=34.9) {
             answer.setText(disp);
             descriptive_text.setText(R.string.obesity1);
-        } else if (ans > 34.9 && ans >= 39.9) {
+        } else if (ans > 34.9 && ans <= 39.9) {
             answer.setText(disp);
             descriptive_text.setText(R.string.obesity2);
+        }
+        else if (ans > 39.9 && ans <= 50)
+        {
+            answer.setText(disp);
+            descriptive_text.setText(R.string.obesity3);
         }
         else
         {
             answer.setText(disp);
-            descriptive_text.setText(R.string.obesity3);
+            descriptive_text.setText(R.string.last);
         }
 
 
@@ -93,6 +103,13 @@ public class Display_Screen extends AppCompatActivity {
                 }
             }
         }).start();
+
+        about_me.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(i);
+            }
+        });
 
 
 
